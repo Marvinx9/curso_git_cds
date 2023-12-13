@@ -269,7 +269,7 @@ def to_excel(df):
 
     worksheet.set_column("A:A", None)
 
-    writer.save()
+    writer.close()
 
     processed_data = output.getvalue()
 
